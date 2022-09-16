@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./assets/application.css">
+    <link rel="stylesheet" href="./assets/vendor/animate.css">
+    <title>Dimmer</title>
+  </head>
+  <body>
+    <img src="./assets/Renault.jpg" alt="" width="105" height="105" />
+    <p class="bubble">
+      💡 Renault AIVI2 Serial Test. 💡
+    </p>
+
+    <noscript>
+      <p class="notice bubble">
+        I'm sorry! For this to actully work you have to enable JavaScript in your browser.
+      </p>
+    </noscript>
+
+    <button id="connect-button" type="button" disabled>🔌 Connect</button>
+
+    <button id="test-button" type="button"> test </button>
+    <button id="version-button" type="button"> version </button>
+    <!-- https://www.codeply.com/go/bp/T0yF2ZNTUd -->
+    <div class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+      <div class="modal-dialog" style="overflow-y: scroll; max-height:85%;  margin-top: 50px; margin-bottom:50px;" > 
+          <div class="modal-content"> 
+              <div class="modal-header"> 
+                  <h3 class="modal-title">Serial Test</h3> 
+              </div> 
+              <div class="modal-body">Defualt String</div> 
+              <div class="modal-footer">--</div> 
+          </div> 
+      </div> 
+    </div> 
+
+    <figure class="fast animated">
+      <input id="led-dimmer" type="range" min="0" max="255" value="0" class="demo bubble" disabled />
+      <figcaption><label for="led-dimmer">LED dimmer<br /><small><span>0</span> % brightness</small></label></figcaption>
+    </figure>
+
+    <script src="./assets/application.js"></script>
+    <script src="./assets/application_test.js"></script>
+    
+  </body>
+</html>
